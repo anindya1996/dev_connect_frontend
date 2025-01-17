@@ -15,6 +15,16 @@
 - Login and see if data is coming
 - Navbar should update after user logs in
 - Refactor files and folders
+- Should not access others routes without login
+- If token is not present,redirect to login page
+- Logout feature
+- Get the feed
+- Add feed in the store
+- Built UserCard
+- Edit profile feature
+- Show toast message on saving profile
+- See all connections
+- See all connection requests
 
 Body
 Navbar
