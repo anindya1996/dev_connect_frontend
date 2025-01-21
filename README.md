@@ -25,6 +25,9 @@
 - Show toast message on saving profile
 - See all connections
 - See all connection requests
+- Accept/reject connection request
+- Send/ignore the user from card
+- Signup Page
 
 Body
 Navbar

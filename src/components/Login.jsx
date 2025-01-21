@@ -4,10 +4,11 @@ import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 import { useNavigate } from "react-router-dom";
 import { BASE_URL } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 const Login = () => {
-  const [email, setEmail] = useState("anindya@gmail.com");
-  const [password, setPassword] = useState("Anindya@123");
+  const [email, setEmail] = useState("@gmail.com");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState();
 
   const dispatch = useDispatch();
@@ -47,7 +48,7 @@ const Login = () => {
         <div className="card bg-[#3c3c3c] w-96 shadow-xl">
           <div className="card-body">
             <h2 className="card-title text-white justify-center">Login Here</h2>
-            <form className="m-4">
+            <form className="m-4 ">
               <label className="input input-bordered flex items-center gap-2 m-2 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -89,6 +90,12 @@ const Login = () => {
                 />
               </label>
               <p className="text-red-500 p-2">{error}</p>
+              <h3 className="text-white text-center">
+                New user?
+                <span className="text-green-300">
+                  <Link to="/signup"> Signup</Link>
+                </span>
+              </h3>
               <div className="card-actions justify-center p-2">
                 <button
                   onClick={handleLogin}

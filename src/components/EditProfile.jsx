@@ -13,6 +13,7 @@ const EditProfile = ({ user }) => {
   const [gender, setGender] = useState(user?.gender || "");
   const [about, setAbout] = useState(user?.about || "");
   const [error, setError] = useState("");
+  const [skills, setSkills] = useState(user?.skills || "");
   const [showToast, setShowToast] = useState(false);
 
   const dispatch = useDispatch();
@@ -29,6 +30,7 @@ const EditProfile = ({ user }) => {
           gender,
           about,
           photoUrl,
+          skills,
         },
         {
           withCredentials: true,
@@ -118,6 +120,17 @@ const EditProfile = ({ user }) => {
                 </label>
                 <label className="form-control w-full max-w-xs my-2">
                   <div className="label">
+                    <span className="label-text text-white">Skills:</span>
+                  </div>
+                  <input
+                    type="text"
+                    value={skills}
+                    onChange={(e) => setSkills(e.target.value)}
+                    className="input input-bordered w-full max-w-xs text-black"
+                  />
+                </label>
+                <label className="form-control w-full max-w-xs my-2">
+                  <div className="label">
                     <span className="label-text text-white">About:</span>
                   </div>
                   <textarea
@@ -140,7 +153,7 @@ const EditProfile = ({ user }) => {
         </div>
 
         <UserCard
-          user={{ firstName, lastName, photoUrl, age, about, gender }}
+          user={{ firstName, lastName, photoUrl, age, about, gender, skills }}
         />
       </div>
     </>
