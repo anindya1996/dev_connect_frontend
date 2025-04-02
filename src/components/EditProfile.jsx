@@ -71,7 +71,7 @@ const EditProfile = ({ user }) => {
                     type="text"
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
-                    className="input input-bordered w-full max-w-xs text-black"
+                    className="input input-bordered w-full max-w-xs text-white"
                   />
                 </label>
                 <label className="form-control w-full max-w-xs my-2">
@@ -83,7 +83,7 @@ const EditProfile = ({ user }) => {
                       type="text"
                       value={lastName}
                       onChange={(e) => setLastName(e.target.value)}
-                      className="input input-bordered w-full max-w-xs text-black"
+                      className="input input-bordered w-full max-w-xs text-white"
                     />
                   </label>
                   <div className="label">
@@ -93,7 +93,7 @@ const EditProfile = ({ user }) => {
                     type="text"
                     value={photoUrl}
                     onChange={(e) => setPhotoUrl(e.target.value)}
-                    className="input input-bordered w-full max-w-xs text-black"
+                    className="input input-bordered w-full max-w-xs text-white"
                   />
                 </label>
                 <label className="form-control w-full max-w-xs my-2">
@@ -104,7 +104,7 @@ const EditProfile = ({ user }) => {
                     type="text"
                     value={age}
                     onChange={(e) => setAge(e.target.value)}
-                    className="input input-bordered w-full max-w-xs text-black"
+                    className="input input-bordered w-full max-w-xs text-white"
                   />
                 </label>
                 <label className="form-control w-full max-w-xs my-2">
@@ -115,7 +115,7 @@ const EditProfile = ({ user }) => {
                     type="text"
                     value={gender}
                     onChange={(e) => setGender(e.target.value)}
-                    className="input input-bordered w-full max-w-xs text-black"
+                    className="input input-bordered w-full max-w-xs text-white"
                   />
                 </label>
                 <label className="form-control w-full max-w-xs my-2">
@@ -126,7 +126,7 @@ const EditProfile = ({ user }) => {
                     type="text"
                     value={skills}
                     onChange={(e) => setSkills(e.target.value)}
-                    className="input input-bordered w-full max-w-xs text-black"
+                    className="input input-bordered w-full max-w-xs text-white"
                   />
                 </label>
                 <label className="form-control w-full max-w-xs my-2">
@@ -136,7 +136,7 @@ const EditProfile = ({ user }) => {
                   <textarea
                     value={about}
                     onChange={(e) => setAbout(e.target.value)}
-                    className="textarea textarea-bordered text-black"
+                    className="textarea textarea-bordered text-white"
                     placeholder="Bio"
                   ></textarea>
                 </label>

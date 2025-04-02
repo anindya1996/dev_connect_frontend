@@ -9,7 +9,6 @@ import Feed from "./components/Feed";
 import Connections from "./components/Connections";
 import Request from "./components/Request";
 import Signup from "./components/Signup";
-import { Navigate } from "react-router-dom";
 
 function App() {
   return (
